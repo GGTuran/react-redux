@@ -1,4 +1,6 @@
 import { decrement, increment } from "./redux/features/CounterSlice";
+import AddPostForm from "./redux/features/Posts/AddPostForm";
+import PostList from "./redux/features/Posts/PostList";
 import { useAppDispatch, useAppSelector } from "./redux/hook";
 
 function App() {
@@ -21,6 +23,10 @@ function App() {
           Decrement
         </button>
       </div>
+      <main className="m-10 p-10 border border-gray-600 rounded-3xl ">
+        <AddPostForm></AddPostForm>
+        <PostList></PostList>
+      </main>
     </div>
   );
 }
